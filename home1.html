@@ -1,0 +1,32 @@
+<!--WELCOME PAGE-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Background</title>
+    <link rel="stylesheet" href="sty.css" />
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <source
+        src="https://cdn.create.vista.com/api/media/medium/249226314/stock-video-time-lapse-of-vegetable-seeds-growing-or-sprouting-from-the-ground?token="
+        type="video/mp4"
+      />
+    </video>
+    <div class="content">
+      <h1>CROPS IN INDIA</h1>
+      <button id="myButton" class="float-left submit-button">
+        Get Started
+      </button>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+        var msg = "welcome";
+        const utterance = new SpeechSynthesisUtterance(msg);
+        speechSynthesis.speak(utterance);
+        setTimeout(function () {
+          window.location.href = "signup.php";
+        }, 2000);
+      };
+    </script>
+  </body>
+</html>
